@@ -1,0 +1,23 @@
+$brandcolor: #2196f3;
+$textcolor: #212121;
+$textlight: #ffffff;
+$backgroundcolor: #2f303a;
+$primaryfont: "Roboto", sans-serif;
+$secundaryfont: "Raleway", sans-serif;
+$primarycolor: #757575;
+
+.body {
+  font-family: $primaryfont;
+  color: $primarycolor;
+  margin: 0;
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  letter-spacing: 0.03em;
+  color: $textcolor;
+  text-align: center;
+  padding-top: 94px;
+  margin: 0 0 50px;
+}

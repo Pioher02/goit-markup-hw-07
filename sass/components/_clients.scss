@@ -1,0 +1,37 @@
+@import "../utils/variables";
+
+.clients__title {
+  padding: 54px 0 44.02px 0;
+  margin: 0;
+}
+
+.client {
+  list-style: none;
+  display: flex;
+  padding: 0 215px;
+  justify-content: space-between;
+
+  &__item {
+    width: 170px;
+    height: 81px;
+    display: flex;
+    border: 1px solid #afb1b8;
+    border-radius: 4px;
+    margin: 0 0 151px 0;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      border: 1px solid $brandcolor;
+    }
+    &:hover .client__logo {
+      fill: $brandcolor;
+    }
+  }
+
+  &__logo {
+    width: 106px;
+    height: 52.83px;
+    fill: #afb1b8;
+  }
+}

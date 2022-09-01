@@ -1,0 +1,41 @@
+@import "../utils/variables";
+
+.wedo {
+  display: flex;
+  margin: 5.05px 211.84px 94px 215px;
+  justify-content: space-between;
+
+  &__images {
+    display: flex;
+    width: 370px;
+    height: 294px;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  &__images--computer {
+    background-image: url("../images/Computador-Tablet.jpg");
+  }
+
+  &__images--cellphone {
+    background-image: url("../images/Celular-Portatil.jpg");
+  }
+
+  &__images--tablet {
+    background-image: url("../images/Tablet.jpg");
+  }
+
+  &__description {
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: $textlight;
+    background: rgba(47, 48, 58, 0.8);
+    width: 370px;
+    height: 70px;
+    margin: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

@@ -1,0 +1,46 @@
+@import "../utils/variables";
+
+.paragraphs {
+  display: flex;
+  margin: 0 215px;
+  padding-inline-start: 0;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.item {
+  list-style: none;
+
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  &__image {
+    width: 270px;
+    height: 120px;
+    background-color: #f5f4fa;
+    border-radius: 4px;
+    display: flex;
+    margin-top: 82px;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    color: $textcolor;
+    margin-top: 30px;
+    margin-bottom: 10px;
+  }
+
+  &__paragraph {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    width: 270px;
+  }
+}

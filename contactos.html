@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>WebStudio</title>
+    <meta charset="utf-8" />
+    <link
+      rel="stylesheet"
+      href="https://github.com/sindresorhus/modern-normalize.git"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,700;1,700&family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="body">
+    <header class="header">
+      <p class="header__page-title">WebStudio</p>
+      <nav class="navigation">
+        <a href="./index.html" class="navigation__link">Estudio</a>
+        <a href="./portafolio.html" class="navigation__link">Portafolio</a>
+        <a
+          href="./contactos.html"
+          class="navigation__link navigation__link--active"
+          >Contactos</a
+        >
+      </nav>
+      <ul class="contacts">
+        <li class="upcontacts">
+          <svg class="upcontacts__icon-envelope">
+            <use href="./images/icon.svg#icon-envelope"></use>
+          </svg>
+          <a class="upcontacts__link" href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+        <li class="upcontacts">
+          <svg class="upcontacts__smarthphone">
+            <use href="./images/icon.svg#smarthphone"></use>
+          </svg>
+          <a class="upcontacts__link" href="tel:+525555296000"
+            >+52 55 5529 6000</a
+          >
+        </li>
+      </ul>
+    </header>
+
+    <main>
+      <h1 class="contacts-title">
+        Deje sus datos, nos contactaremos con usted
+      </h1>
+      <form class="contactsform" name="contacts">
+        <label for="name"> Nombre </label>
+        <div class="contactsform__input-container">
+          <svg class="contactsform__svg">
+            <use href="./images/icon.svg#nombre"></use>
+          </svg>
+          <input
+            class="contactsform__input"
+            type="text"
+            id="name"
+            name="name"
+          />
+        </div>
+
+        <label for="phone"> Teléfono </label>
+        <div class="contactsform__input-container">
+          <svg class="contactsform__svg">
+            <use href="./images/icon.svg#phone"></use>
+          </svg>
+          <input
+            class="contactsform__input"
+            type="tel"
+            id="phone"
+            name="phone"
+          />
+        </div>
+
+        <label for="mail"> E-mail </label>
+        <div class="contactsform__input-container">
+          <svg class="contactsform__svg">
+            <use href="./images/icon.svg#mail"></use>
+          </svg>
+          <input
+            class="contactsform__input"
+            type="email"
+            id="mail"
+            name="mail"
+          />
+        </div>
+
+        <label class="contactsform__comments">
+          Comentarios
+          <textarea
+            class="contactsform__textarea"
+            name="comentarios"
+            placeholder="Introduzca el texto"
+          ></textarea>
+        </label>
+        <label class="contactsform__checkbox">
+          <input type="checkbox" name="agreed" value="agreed" required />
+          Estoy de acuerdo con el boletín informativo y acepto los Términos y
+          Condiciones
+        </label>
+        <button class="contactsform__sent" type="submit">Enviar</button>
+      </form>
+    </main>
+
+    <footer class="footer">
+      <p class="footer__page-title">WebStudio</p>
+      <address class="footer__address">
+        Calz. Ticomán 500, Ciudad de México, CDMX, México
+        <div class="footer__contacts">
+          <a href="info@example.com" class="footer__downcontacts"
+            >info@example.com</a
+          >
+          <a href="Tel:+525555296000" class="footer__downcontacts">
+            +52 55 5529 6000
+          </a>
+        </div>
+      </address>
+      <div class="footer__findus">ENCUENTRENOS EN</div>
+      <div class="footer__social-icon">
+        <a class="footer__cicle" href=""
+          ><svg class="footer__icon">
+            <use href="./images/icon.svg#icon-instagram"></use></svg
+        ></a>
+        <a class="footer__cicle" href=""
+          ><svg class="footer__icon">
+            <use href="./images/icon.svg#icon-twitter"></use></svg
+        ></a>
+        <a class="footer__cicle" href=""
+          ><svg class="footer__icon">
+            <use href="./images/icon.svg#icon-facebook1"></use></svg
+        ></a>
+        <a class="footer__cicle" href=""
+          ><svg class="footer__icon">
+            <use href="./images/icon.svg#icon-linkedin2"></use></svg
+        ></a>
+      </div>
+      <div class="footer__suscribe">SUSCRÍBASE AL BOLETÍN INFORMATIVO</div>
+      <form class="footer__suscribeform" name="suscribe">
+        <input
+          class="footer__suscribe-input"
+          type="email"
+          name="email"
+          placeholder="Correo electrónico"
+        />
+        <button class="footer__suscribe-button" type="submit">
+          Suscríbase
+          <svg class="footer__suscribe-icon">
+            <use href="./images/icon.svg#enviar"></use>
+          </svg>
+        </button>
+      </form>
+    </footer>
+  </body>
+</html>

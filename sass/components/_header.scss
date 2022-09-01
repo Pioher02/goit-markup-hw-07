@@ -1,0 +1,92 @@
+@import "../utils/variables";
+
+.header {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+
+  &__page-title {
+    font-family: $secundaryfont;
+    font-weight: 700;
+    font-size: 26px;
+    letter-spacing: 0.03em;
+    color: $brandcolor;
+    margin: 0 93px 0 0;
+    padding-left: 215px;
+  }
+}
+
+.navigation {
+  display: flex;
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: $textcolor;
+    text-decoration: none;
+    margin-right: 50px;
+    position: relative;
+
+    &:hover,
+    &:focus,
+    &--active {
+      color: $brandcolor;
+    }
+
+    &--active::after,
+    &:hover::after,
+    &:focus::after {
+      position: absolute;
+      top: 44px;
+      display: block;
+      content: "";
+      width: 100%;
+      height: 4px;
+      background: $brandcolor;
+      border-radius: 2px;
+    }
+  }
+}
+
+.contacts {
+  display: flex;
+  margin-left: 244px;
+  padding-inline-start: 0px;
+}
+
+.upcontacts {
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  list-style: none;
+  margin-left: 30px;
+
+  &__link {
+    text-decoration: none;
+    color: $primarycolor;
+  }
+
+  &__icon-envelope,
+  &__smarthphone {
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 12px;
+    padding-right: 10px;
+  }
+
+  &__smarthphone {
+    width: 10px;
+    height: 16px;
+  }
+
+  &:hover,
+  &:focus,
+  &__link:focus,
+  &__link:hover {
+    color: $brandcolor;
+    fill: $brandcolor;
+  }
+}
